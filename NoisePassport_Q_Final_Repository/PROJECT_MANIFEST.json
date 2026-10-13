@@ -1,0 +1,25 @@
+{
+  "project": "NoisePassport-Q",
+  "source_materials": [
+    "NoisePassport_Q_Prototype_Evaluation_Report.docx",
+    "NoisePassport_Q_Hackathon_Implementation_Guide.docx",
+    "NoisePassport_Q_illustrative_model_data.csv",
+    "NoisePassport_Q_illustrative_resource_data.csv",
+    "NoisePassport_Q_environment_processor_pack.zip"
+  ],
+  "contents": [
+    "README",
+    "main.py",
+    "source reports",
+    "CSV data",
+    "processor definitions",
+    "environment files",
+    "12 graphs",
+    "technical report",
+    "data dictionary",
+    "experiment protocol",
+    "automated tests"
+  ],
+  "data_status": "ILLUSTRATIVE_SYNTHETIC_NOT_MEASURED",
+  "quantum_classifier_execution_included": false
+}

@@ -1,0 +1,4 @@
+data_status,model,qubits,circuit_depth,two_qubit_gates,shots_per_evaluation,circuit_evaluations,runtime_seconds,peak_memory_mb
+ILLUSTRATIVE_SYNTHETIC_NOT_MEASURED,Quantum classifier,4,18,12,2048,320,14.2,128
+ILLUSTRATIVE_SYNTHETIC_NOT_MEASURED,Quantum + abstention,4,18,12,6144,960,39.8,140
+ILLUSTRATIVE_SYNTHETIC_NOT_MEASURED,Classical RBF SVM,0,0,0,0,1,0.08,42

@@ -1,0 +1,32 @@
+NoisePassport-Q — environment record
+=====================================
+
+STATUS: TEMPLATE — replace with the exact environment used for a successful run.
+
+Project: Project Q Q3 — Noise-Resilient Classifier
+Python target: 3.11
+OS: [fill in, e.g. Windows 11 / Ubuntu 24.04 / macOS]
+CPU: [fill in]
+RAM: [fill in]
+GPU: [fill in or N/A]
+Execution backend: Qiskit Aer simulator / [name real backend only if actually used]
+Qiskit version: [fill in from `python -c "import qiskit; print(qiskit.__version__)"`]
+Qiskit Aer version: [fill in]
+Qiskit Machine Learning version: [fill in]
+Qiskit Algorithms version: [fill in]
+NumPy version: [fill in]
+pandas version: [fill in]
+scikit-learn version: [fill in]
+Matplotlib version: [fill in]
+Random seeds: [fill in]
+Dataset and split: [fill in]
+Run date/time: [fill in]
+Git commit: [fill in]
+
+After a successful install and full run, generate a complete package snapshot:
+    python --version
+    python -m pip freeze > environment.txt
+
+Important: the command above overwrites this template. Keep this metadata in a separate
+environment-notes.md file first, or append the metadata after capturing the package list.
+Do not claim this environment was tested until the project has successfully run in it.

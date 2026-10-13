@@ -1,0 +1,13 @@
+# NoisePassport-Q — reproducible starter dependencies
+# Python 3.11 recommended by the project plan.
+# These are proposed pins from Prototype_Plan.docx; verify install compatibility
+# in a fresh environment and record the versions that actually run.
+qiskit==2.5.2
+qiskit-aer==0.17.1
+qiskit-machine-learning==0.9.1
+qiskit-algorithms==0.4.0
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+matplotlib>=3.8
+jupyter>=1.0

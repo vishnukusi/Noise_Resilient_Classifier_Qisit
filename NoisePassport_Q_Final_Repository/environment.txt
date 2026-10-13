@@ -1,0 +1,10 @@
+Project: NoisePassport-Q
+Workflow: CSV analysis, graph generation, report reproduction
+Python: 3.11 recommended
+OS: Fill in actual OS/version before submission
+CPU/RAM: Fill in actual machine information if relevant
+Data status: ILLUSTRATIVE_SYNTHETIC_NOT_MEASURED
+Run: python main.py
+Tests: pytest -q
+Dependencies: see requirements.txt; record actual versions with `python -m pip freeze`
+Processor profiles: configs/processor_definitions.json (illustrative stress levels, not device calibration)

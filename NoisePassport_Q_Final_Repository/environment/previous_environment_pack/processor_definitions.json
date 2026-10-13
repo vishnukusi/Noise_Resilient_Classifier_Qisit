@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "project": "NoisePassport-Q",
+  "status": "CONFIGURATION_TEMPLATE_NOT_A_HARDWARE_CALIBRATION",
+  "default_processor": {
+    "name": "aer_ideal_simulator",
+    "kind": "qiskit_aer_simulator",
+    "backend": "AerSimulator",
+    "description": "Ideal simulator reference; no noise model attached.",
+    "shots": 2048,
+    "transpile_optimization_level": 1,
+    "seed_simulator": 1234,
+    "seed_transpiler": 1234
+  },
+  "processors": [
+    {
+      "name": "ideal",
+      "kind": "qiskit_aer_simulator",
+      "noise_type": "none",
+      "parameters": {},
+      "purpose": "Reference condition."
+    },
+    {
+      "name": "gate_noise_low",
+      "kind": "qiskit_aer_simulator",
+      "noise_type": "depolarizing_gate_noise",
+      "parameters": {
+        "one_qubit_depolarizing_probability": 0.001,
+        "two_qubit_depolarizing_probability": 0.01
+      },
+      "purpose": "Illustrative low stress setting; synthetic, not device calibration."
+    },
+    {
+      "name": "gate_noise_medium",
+      "kind": "qiskit_aer_simulator",
+      "noise_type": "depolarizing_gate_noise",
+      "parameters": {
+        "one_qubit_depolarizing_probability": 0.005,
+        "two_qubit_depolarizing_probability": 0.03
+      },
+      "purpose": "Illustrative medium stress setting; synthetic, not device calibration."
+    },
+    {
+      "name": "gate_noise_high",
+      "kind": "qiskit_aer_simulator",
+      "noise_type": "depolarizing_gate_noise",
+      "parameters": {
+        "one_qubit_depolarizing_probability": 0.02,
+        "two_qubit_depolarizing_probability": 0.08
+      },
+      "purpose": "Illustrative high stress setting; synthetic, not device calibration."
+    },
+    {
+      "name": "readout_noise_low",
+      "kind": "qiskit_aer_simulator",
+      "noise_type": "readout_bit_flip",
+      "parameters": {
+        "p_0_to_1": 0.01,
+        "p_1_to_0": 0.01
+      },
+      "purpose": "Illustrative low readout stress setting; synthetic, not device calibration."
+    },
+    {
+      "name": "readout_noise_medium",
+      "kind": "qiskit_aer_simulator",
+      "noise_type": "readout_bit_flip",
+      "parameters": {
+        "p_0_to_1": 0.05,
+        "p_1_to_0": 0.05
+      },
+      "purpose": "Illustrative medium readout stress setting; synthetic, not device calibration."
+    },
+    {
+      "name": "readout_noise_high",
+      "kind": "qiskit_aer_simulator",
+      "noise_type": "readout_bit_flip",
+      "parameters": {
+        "p_0_to_1": 0.1,
+        "p_1_to_0": 0.1
+      },
+      "purpose": "Illustrative high readout stress setting; synthetic, not device calibration."
+    }
+  ],
+  "notes": [
+    "These definitions describe simulated test conditions, not actual hardware processors or measured calibration values.",
+    "The team must confirm that these parameters and channels satisfy the official Q3 specification.",
+    "Use the same dataset split for the quantum model and classical baseline.",
+    "Store exact processor/noise configuration with every results row."
+  ]
+}

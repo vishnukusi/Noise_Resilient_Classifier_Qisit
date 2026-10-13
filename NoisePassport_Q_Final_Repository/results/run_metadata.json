@@ -1,0 +1,7 @@
+{
+  "project": "NoisePassport-Q",
+  "run_type": "SUPPLIED_CSV_ANALYSIS_ONLY",
+  "data_status": "ILLUSTRATIVE_SYNTHETIC_NOT_MEASURED",
+  "quantum_execution_performed": false,
+  "note": "Figures and tables are derived from synthetic illustrative CSVs."
+}
